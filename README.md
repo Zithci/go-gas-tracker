@@ -10,6 +10,23 @@ Live multi-chain gas price tracker with real-time updates.
 - **Statistics**: Min/Max/Avg gas prices across updates
 - **Fast**: ~12s total execution time
 
+## Tech Stack
+
+- Go 1.21+
+- Goroutines for concurrency
+- Channels for communication
+- Context for timeout handling
+- JSON-RPC for blockchain data
+
+## Concepts Demonstrated
+
+- Concurrent programming (goroutines, channels, WaitGroup)
+- HTTP requests with context
+- JSON marshaling/unmarshaling
+- Hex to decimal conversion
+- Statistics calculation
+
+
 ## Usage
 ```bash
 go run gasfaster.go
@@ -57,18 +74,3 @@ Optimism     Min:   0.00 | Max:   0.00 | Avg:   0.00
 ⏱️  Total Time:  11.6s
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-## Tech Stack
-
-- Go 1.21+
-- Goroutines for concurrency
-- Channels for communication
-- Context for timeout handling
-- JSON-RPC for blockchain data
-
-## Concepts Demonstrated
-
-- Concurrent programming (goroutines, channels, WaitGroup)
-- HTTP requests with context
-- JSON marshaling/unmarshaling
-- Hex to decimal conversion
-- Statistics calculation
